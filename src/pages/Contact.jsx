@@ -8,29 +8,29 @@ export default function Contact() {
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">İletişim Bilgileri</h2>
             <p className="mt-2 text-gray-600 max-w-prose">Doğalgaz, ısıtma-soğutma ve mekanik tesisat ihtiyaçlarınız için keşif, proje ve teknik servis taleplerinizi bize iletebilirsiniz.</p>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="mt-6 grid grid-cols-1 gap-4">
               {/* Adres */}
               <div className="flex items-start gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm hover:shadow-md transition">
-                <div className="shrink-0 h-12 w-12 rounded bg-black grid place-items-center text-white">
+                <div className="shrink-0 self-center h-12 w-12 rounded bg-black grid place-items-center text-white">
                   <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 11a2 2 0 110-4 2 2 0 010 4z"/></svg>
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Adres</div>
-                  <div className="text-gray-600">Çamçeşme Mah. Çanakkale Şehitleri Sok. No:25 D:11, Pendik / İstanbul</div>
+                  <div className="text-gray-600">Çamçeşme Mah. Çanakkale Şehitleri Sok. No:25 D:11, <span className="block">Pendik / İstanbul</span></div>
                 </div>
               </div>
               {/* Telefon */}
-              <div className="flex items-start gap-2 rounded-2xl border border-gray-200 bg-white p-3 md:p-4 shadow-sm hover:shadow-md transition">
-                <div className="shrink-0 h-10 w-10 rounded bg-black grid place-items-center text-white">
-                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V21a1 1 0 01-1 1C10.3 22 2 13.7 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"/></svg>
+              <div className="flex items-start gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm hover:shadow-md transition">
+                <div className="shrink-0 h-12 w-12 rounded bg-black grid place-items-center text-white">
+                  <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V21a1 1 0 01-1 1C10.3 22 2 13.7 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"/></svg>
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Telefon</div>
-                  <div className="text-gray-600 text-sm md:text-base">+90 (541) 311 00 31</div>
+                  <div className="text-gray-600">+90 (541) 311 00 31</div>
                 </div>
               </div>
               {/* E‑Mail */}
-              <div className="flex items-start gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm hover:shadow-md transition sm:col-span-2">
+              <div className="flex items-start gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm hover:shadow-md transition">
                 <div className="shrink-0 h-12 w-12 rounded bg-black grid place-items-center text-white">
                   <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm-1.4 3L12 12 5.4 7h13.2z"/></svg>
                 </div>
@@ -99,12 +99,12 @@ export default function Contact() {
       {/* Harita */}
       <div className="mt-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+          <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm h-72 md:h-[420px]">
             <iframe
               title="Harita"
               src="https://www.google.com/maps?q=40.8883459,29.2551001&output=embed"
               width="100%"
-              height="420"
+              height="100%"
               style={{ border: 0 }}
               loading="lazy"
               allowFullScreen

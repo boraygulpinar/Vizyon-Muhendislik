@@ -47,9 +47,30 @@ export default function Layout() {
                 <div className={`rounded bg-gradient-to-br from-orange-500 to-cyan-500 text-gray-900 grid place-items-center font-extrabold transition-all duration-300 ${scrolled ? 'h-8 w-8' : 'h-9 w-9'}`}>VM</div>
               <div className="leading-tight">
                 <div className="font-bold tracking-wide bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent">Vizyon Mühendislik</div>
-                <div className="text-[10px] text-orange-400 -mt-0.5">Isıtma · Soğutma · Mekanik</div>
+                <div className="hidden sm:block text-[10px] text-orange-400 -mt-0.5">Isıtma · Soğutma · Mekanik</div>
               </div>
             </Link>
+
+            {/* Mobile menu button */}
+            <button
+              type="button"
+              className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-white/90 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+              aria-label="Menüyü Aç/Kapat"
+              aria-expanded={open ? 'true' : 'false'}
+              onClick={() => setOpen((v) => !v)}
+            >
+              {open ? (
+                // Close icon
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path fillRule="evenodd" d="M6.225 4.811a1 1 0 0 1 1.414 0L12 9.172l4.361-4.361a1 1 0 1 1 1.414 1.414L13.414 10.586l4.361 4.361a1 1 0 0 1-1.414 1.414L12 12l-4.361 4.361a1 1 0 0 1-1.414-1.414l4.361-4.361-4.361-4.361a1 1 0 0 1 0-1.414Z" clipRule="evenodd" />
+                </svg>
+              ) : (
+                // Hamburger icon
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
+                </svg>
+              )}
+            </button>
 
             {/* Desktop nav */}
             <nav className="hidden md:flex items-center gap-5">

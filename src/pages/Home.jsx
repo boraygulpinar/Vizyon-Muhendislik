@@ -26,35 +26,35 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-16">
       {/* Hero Section */}
-      <section className="relative rounded-xl shadow overflow-hidden">
+      <section className="relative rounded-xl shadow overflow-hidden min-h-[320px] md:min-h-[460px]">
         {/* Background image + overlay */}
         <img
           src="/assets/banner.png"
           alt="Vizyon Mühendislik Isıtma Soğutma Sistemleri Kapak Görseli"
-          className="w-full h-auto block"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/75" />
 
         {/* Content */}
         <div className="absolute inset-0 px-6 md:px-10 py-8 md:py-12 text-center flex flex-col items-center justify-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight drop-shadow-lg">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-snug drop-shadow-lg">
               Vizyon Mühendislik
             </h1>
-            <p className="text-2xl font-bold text-white mt-2 drop-shadow-md"><span className="text-orange-500">Isıtma</span> ve <span className="text-cyan-300">Soğutma</span> Sistemleri</p>
-            <p className="mt-4 md:mt-6 text-base md:text-lg text-gray-200 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl font-bold text-white mt-2 drop-shadow-md"><span className="text-orange-500">Isıtma</span> ve <span className="text-cyan-300">Soğutma</span> Sistemleri</p>
+            <p className="mt-3 sm:mt-4 md:mt-6 text-sm sm:text-base md:text-lg text-gray-200 max-w-3xl mx-auto">
               Doğalgaz, mekanik tesisat, ısıtma ve soğutma sistemlerinde; mevzuata uygun, güvenilir ve sürdürülebilir çözümler üretiyoruz. Konut, ticari ve endüstriyel projelerde keşif, projelendirme, uygulama ve bakım süreçlerini uçtan uca yönetiyoruz.
             </p>
-            <div className="mt-8 flex items-center justify-center gap-3">
+            <div className="mt-6 sm:mt-8 flex items-center justify-center gap-2 sm:gap-3">
               <Link
                 to="/iletisim"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 hover:scale-105 hover:from-orange-600 hover:to-orange-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-300"
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-sm sm:text-base rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 hover:scale-105 hover:from-orange-600 hover:to-orange-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-300"
               >
                 Teklif Al
               </Link>
               <Link
                 to="/projeler"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 hover:scale-105 hover:from-cyan-600 hover:to-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-sm sm:text-base rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 hover:scale-105 hover:from-cyan-600 hover:to-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
               >
                 Projelerimiz
               </Link>
@@ -168,7 +168,7 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-white/15 via-white/8 to-slate-900/40" />
                 </div>
-                <div className="relative flex items-start justify-center h-[22rem] pt-6">
+                <div className="relative flex items-start justify-center h-72 sm:h-80 md:h-[22rem] pt-6">
                   <div className="h-20 w-32 max-h-24 max-w-36 rounded-xl bg-white/95 shadow-xl ring-2 ring-white/90 border border-gray-200/70 grid place-items-center overflow-hidden px-4 py-3">
                     <img src={ref.logo} alt={`${ref.name} logo`} className="max-h-14 max-w-full object-contain" />
                   </div>

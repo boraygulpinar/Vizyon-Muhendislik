@@ -299,11 +299,11 @@ export default function ProjectDetail() {
     <section className="py-10 md:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 items-start">
-          <div className="rounded-2xl overflow-hidden bg-gray-100 shadow-lg shadow-black/10 ring-1 ring-gray-200">
+          <div className="rounded-2xl overflow-hidden bg-gray-100 shadow-lg shadow-black/10 ring-1 ring-gray-200 aspect-[4/3] sm:aspect-auto">
             <img
               src={project.img}
               alt={project.title}
-              className="w-full h-full object-cover max-h-[520px]"
+              className="w-full h-full object-cover sm:max-h-[520px]"
               loading="lazy"
               decoding="async"
               onError={onImgError}
