@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function MerkeziSistemDogalgazDetail({ project }) {
   const [showLightbox, setShowLightbox] = useState(false);
-  const FALLBACK_IMG = '/src/assets/projects/pro4.jpeg';
+  const FALLBACK_IMG = '/assets/projects/pro4.jpeg';
   const onImgError = (e) => {
     if (e?.currentTarget) {
       e.currentTarget.onerror = null;

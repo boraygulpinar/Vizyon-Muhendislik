@@ -7,7 +7,7 @@ export default function ProjectDetail() {
   const { id } = useParams();
   const project = useMemo(() => getProjectById(id), [id]);
 
-  const FALLBACK_IMG = '/src/assets/projects/pro1.jpeg';
+  const FALLBACK_IMG = '/assets/projects/pro1.jpeg';
   const onImgError = (e) => {
     if (e?.currentTarget) {
       e.currentTarget.onerror = null;

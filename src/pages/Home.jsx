@@ -6,19 +6,19 @@ export default function Home() {
     {
       title: 'Endüstriyel Mekanik Tesisat',
       desc: 'Kazan dairesi, pompa grupları ve otomasyon entegrasyonlu proses hatları. Endüstriyel tesislerde yüksek kapasiteli ısıtma sistemleri, hidrofor grupları ve tam otomatik kontrol sistemlerinin kurulumu. Enerji verimliliği odaklı çözümlerle işletme maliyetlerini minimize ediyoruz.',
-      img: '/src/assets/project10.png',
+      img: '/assets/project10.png',
       tag: 'Mekanik',
     },
     {
       title: 'AVM VRF İklimlendirme',
       desc: 'Yüksek verimli VRF, havalandırma ve duman tahliye sistemleri. Alışveriş merkezleri ve büyük ticari alanlar için merkezi klima, hava kalitesi kontrol sistemleri ve yangın güvenliği standartlarına uygun duman tahliye çözümleri. 7/24 kesintisiz konfor ve güvenlik.',
-      img: '/src/assets/project6.jpeg',
+      img: '/assets/project6.jpeg',
       tag: 'Soğutma',
     },
     {
       title: 'Konut Doğalgaz Dönüşümü',
       desc: 'Konut ve site projelerinde doğalgaz iç tesisat ve kombi devreye alma. EPDK onaylı projelendirme, güvenli montaj ve devreye alma süreçleri. Mevzuata tam uyumlu, uzun ömürlü ve ekonomik ısınma çözümleri için A\'dan Z\'ye hizmet.',
-      img: '/src/assets/project3.jpeg',
+      img: '/assets/project3.jpeg',
       tag: 'Doğalgaz',
     },
   ];
@@ -29,7 +29,7 @@ export default function Home() {
       <section className="relative rounded-xl shadow overflow-hidden">
         {/* Background image + overlay */}
         <img
-          src="/src/assets/banner.png"
+          src="/assets/banner.png"
           alt="Vizyon Mühendislik Isıtma Soğutma Sistemleri Kapak Görseli"
           className="w-full h-auto block"
         />
@@ -150,11 +150,11 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[ 
-              { name: 'Ülker', logo: '/src/assets/referanslar/ulkerlogo.png', img: '/src/assets/referanslar/ulker.jpeg' },
-              { name: 'Emlak Konut', logo: '/src/assets/referanslar/emlakkonutlogo.png', img: '/src/assets/referanslar/emlakkonut.jpeg' },
-              { name: 'Dap Yapı', logo: '/src/assets/referanslar/dapyapilogo.svg', img: '/src/assets/referanslar/dapyapi.jpeg' },
-              { name: 'Kroman Demir Çelik', logo: '/src/assets/referanslar/kromanceliklogo.png', img: '/src/assets/referanslar/kromandemircelik.jpeg' },
-              { name: 'Akyat', logo: '/src/assets/referanslar/akyatlogo.png', img: '/src/assets/referanslar/akyat.jpeg' },
+              { name: 'Ülker', logo: '/assets/referanslar/ulkerlogo.png', img: '/assets/referanslar/ulker.jpeg' },
+              { name: 'Emlak Konut', logo: '/assets/referanslar/emlakkonutlogo.png', img: '/assets/referanslar/emlakkonut.jpeg' },
+              { name: 'Dap Yapı', logo: '/assets/referanslar/dapyapilogo.svg', img: '/assets/referanslar/dapyapi.jpeg' },
+              { name: 'Kroman Demir Çelik', logo: '/assets/referanslar/kromanceliklogo.png', img: '/assets/referanslar/kromandemircelik.jpeg' },
+              { name: 'Akyat', logo: '/assets/referanslar/akyatlogo.png', img: '/assets/referanslar/akyat.jpeg' },
             ].map((ref, i) => (
               <div
                 key={i}
@@ -188,7 +188,7 @@ export default function Home() {
         {/* Background image as CSS layer for reliability */}
         <div
           className="absolute inset-0 bg-center bg-cover"
-          style={{ backgroundImage: "url('/src/assets/banner2.png')" }}
+          style={{ backgroundImage: "url('/assets/banner2.png')" }}
           aria-hidden="true"
         />
         {/* Overlay */}
