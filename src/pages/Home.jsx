@@ -4,22 +4,22 @@ export default function Home() {
   // Öne çıkan projeler (dummy data) – gerçek veri geldiğinde bu yapı kolayca entegre olur
   const featuredProjects = [
     {
-      title: 'Endüstriyel Mekanik Tesisat',
-      desc: 'Kazan dairesi, pompa grupları ve otomasyon entegrasyonlu proses hatları. Endüstriyel tesislerde yüksek kapasiteli ısıtma sistemleri, hidrofor grupları ve tam otomatik kontrol sistemlerinin kurulumu. Enerji verimliliği odaklı çözümlerle işletme maliyetlerini minimize ediyoruz.',
-      img: '/assets/project10.png',
-      tag: 'Mekanik',
+      title: 'Endüstriyel Doğalgaz Tesisatı',
+      desc: 'Endüstriyel Doğalgaz Tesisatı, sanayi tesislerinde ve büyük işletmelerde kullanılan makinelerin, kazanların ve proses sistemlerinin ihtiyaç duyduğu doğalgazın; şebekeden alınarak güvenli bir şekilde yakıcı ekipmanlara ulaştırılmasını sağlayan komple bir altyapı sistemidir.',
+      img: '/assets/projects/pro1.jpeg',
+      link: '/projeler/endustriyel-dogalgaz-tesisati',
     },
     {
-      title: 'AVM VRF İklimlendirme',
-      desc: 'Yüksek verimli VRF, havalandırma ve duman tahliye sistemleri. Alışveriş merkezleri ve büyük ticari alanlar için merkezi klima, hava kalitesi kontrol sistemleri ve yangın güvenliği standartlarına uygun duman tahliye çözümleri. 7/24 kesintisiz konfor ve güvenlik.',
-      img: '/assets/project6.jpeg',
-      tag: 'Soğutma',
+      title: 'Buhar Kazan Tesisatı',
+      desc: 'Buhar Kazan Tesisatı, sanayi tesislerinde buhar ihtiyacını karşılamak amacıyla; suyun kontrollü olarak ısıtılıp buhara dönüştürülmesini, bu buharın güvenli şekilde dağıtılmasını ve kullanılan buharın tekrar sisteme kazandırılmasını sağlayan entegre bir mühendislik sistemidir. Bu tesisat yalnızca bir kazan değil, kazanla birlikte çalışan tüm yardımcı sistemleri kapsar ve üretimin sürekliliği açısından kritik öneme sahiptir.',
+      img: '/assets/projects/pro2.jpeg',
+      link: '/projeler/buhar-kazan-tesisati',
     },
     {
-      title: 'Konut Doğalgaz Dönüşümü',
-      desc: 'Konut ve site projelerinde doğalgaz iç tesisat ve kombi devreye alma. EPDK onaylı projelendirme, güvenli montaj ve devreye alma süreçleri. Mevzuata tam uyumlu, uzun ömürlü ve ekonomik ısınma çözümleri için A\'dan Z\'ye hizmet.',
-      img: '/assets/project3.jpeg',
-      tag: 'Doğalgaz',
+      title: 'Kızgın Yağ Tesisatı',
+      desc: 'Kızgın yağ tesisatı, sanayi tesislerinde yüksek sıcaklık ihtiyacının karşılanması amacıyla; su veya buhar yerine ısı transfer yağı kullanılarak ısı enerjisinin yüksek sıcaklıklarda, düşük basınç altında güvenli ve verimli şekilde üretilmesini ve dağıtılmasını sağlayan sistemdir. Bu sistem, özellikle sabit ve kontrollü yüksek sıcaklık gerektiren proseslerde tercih edilir.',
+      img: '/assets/projects/pro5.jpeg',
+      link: '/projeler/kizgin-yag-tesisati',
     },
   ];
 
@@ -45,7 +45,7 @@ export default function Home() {
             <p className="mt-3 sm:mt-4 md:mt-6 text-sm sm:text-base md:text-lg text-gray-200 max-w-3xl mx-auto">
               Doğalgaz, mekanik tesisat, ısıtma ve soğutma sistemlerinde; mevzuata uygun, güvenilir ve sürdürülebilir çözümler üretiyoruz. Konut, ticari ve endüstriyel projelerde keşif, projelendirme, uygulama ve bakım süreçlerini uçtan uca yönetiyoruz.
             </p>
-            <div className="mt-6 sm:mt-8 flex items-center justify-center gap-2 sm:gap-3">
+            <div className="mt-6 sm:mt-8 flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
               <Link
                 to="/iletisim"
                 className="inline-flex items-center gap-2 px-5 py-2.5 text-sm sm:text-base rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 hover:scale-105 hover:from-orange-600 hover:to-orange-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-300"
@@ -58,6 +58,14 @@ export default function Home() {
               >
                 Projelerimiz
               </Link>
+              <a
+                href="https://wa.me/905413110031?text=Merhaba"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-sm sm:text-base rounded-full bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 hover:scale-105 hover:from-green-600 hover:to-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-300"
+              >
+                WhatsApp
+              </a>
             </div>
           </div>
         </div>
@@ -98,6 +106,41 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-1">{s.title}</h3>
               <p className="text-gray-600">{s.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Öne Çıkan Projeler */}
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Öne Çıkan Projeler</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {featuredProjects.map((project, i) => (
+            <div key={i} className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1.5">
+              {/* Project Image */}
+              <div className="relative h-64 overflow-hidden bg-gray-200">
+                <img
+                  src={project.img}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70" />
+              </div>
+
+              {/* Content */}
+              <div className="relative p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{project.title}</h3>
+                <p className="text-sm text-gray-600 mb-4 line-clamp-3">{project.desc}</p>
+                <Link
+                  to={project.link}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition group/link"
+                >
+                  Detayı Gör
+                  <svg className="w-4 h-4 group-hover/link:translate-x-1 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           ))}
         </div>

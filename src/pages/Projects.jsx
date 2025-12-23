@@ -7,10 +7,11 @@ export default function Projects() {
     1: 'endustriyel-dogalgaz-tesisati',
     2: 'buhar-kazan-tesisati',
     3: 'dogalgaz-altyapi-tesisati',
-    4: 'merkezi-sistem-dogalgaz',
-    5: 'kizgin-yag-tesisati',
-    6: 'kizgin-su-tesisati',
-    7: 'radyant-isitma-sistemleri',
+    4: 'paslanmaz-tank-sistemleri',
+    5: 'merkezi-sistem-dogalgaz',
+    6: 'kizgin-yag-tesisati',
+    7: 'kizgin-su-tesisati',
+    8: 'radyant-isitma-sistemleri',
   };
 
   return (

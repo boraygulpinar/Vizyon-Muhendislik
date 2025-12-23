@@ -12,6 +12,7 @@ const EndustriyelDogalgazTesisatiDetail = lazy(() => import('./pages/details/Pro
 const BuharKazanTesisatiDetail = lazy(() => import('./pages/details/ProjectDetails/buhar-kazan-tesisati'));
 const DogalgazAltyapiTesisatiDetail = lazy(() => import('./pages/details/ProjectDetails/dogalgaz-altyapi-tesisati'));
 const MerkeziSistemDogalgazDetail = lazy(() => import('./pages/details/ProjectDetails/merkezi-sistem-dogalgaz'));
+const PaslanmazTankSistemleriDetail = lazy(() => import('./pages/details/ProjectDetails/paslanmaz-tank-sistemleri'));
 const KizginYagTesisatiDetail = lazy(() => import('./pages/details/ProjectDetails/kizgin-yag-tesisati'));
 const KizginSuTesisatiDetail = lazy(() => import('./pages/details/ProjectDetails/kizgin-su-tesisati'));
 const RadyantIsitmaSistemleriDetail = lazy(() => import('./pages/details/ProjectDetails/radyant-isitma-sistemleri'));
@@ -28,10 +29,11 @@ export default function App() {
             <Route path="endustriyel-dogalgaz-tesisati" element={<EndustriyelDogalgazTesisatiDetail project={getProjectById(1)} />} />
             <Route path="buhar-kazan-tesisati" element={<BuharKazanTesisatiDetail project={getProjectById(2)} />} />
             <Route path="dogalgaz-altyapi-tesisati" element={<DogalgazAltyapiTesisatiDetail project={getProjectById(3)} />} />
-            <Route path="merkezi-sistem-dogalgaz" element={<MerkeziSistemDogalgazDetail project={getProjectById(4)} />} />
-            <Route path="kizgin-yag-tesisati" element={<KizginYagTesisatiDetail project={getProjectById(5)} />} />
-            <Route path="kizgin-su-tesisati" element={<KizginSuTesisatiDetail project={getProjectById(6)} />} />
-            <Route path="radyant-isitma-sistemleri" element={<RadyantIsitmaSistemleriDetail project={getProjectById(7)} />} />
+            <Route path="paslanmaz-tank-sistemleri" element={<PaslanmazTankSistemleriDetail project={getProjectById(4)} />} />
+            <Route path="merkezi-sistem-dogalgaz" element={<MerkeziSistemDogalgazDetail project={getProjectById(5)} />} />
+            <Route path="kizgin-yag-tesisati" element={<KizginYagTesisatiDetail project={getProjectById(6)} />} />
+            <Route path="kizgin-su-tesisati" element={<KizginSuTesisatiDetail project={getProjectById(7)} />} />
+            <Route path="radyant-isitma-sistemleri" element={<RadyantIsitmaSistemleriDetail project={getProjectById(8)} />} />
             <Route path=":id" element={<ProjectDetail />} />
           </Route>
           <Route path="/iletisim" element={<Contact />} />

@@ -22,27 +22,34 @@ export const PROJECTS = [
   },
   {
     id: 4,
+    title: 'Paslanmaz Tank Sistemleri',
+    img: '/assets/projects/pro8.jpeg',
+    summary:
+      'Paslanmaz tank sistemleri, endüstriyel tesislerde sıvı ve gazların depolanması, ısıtılması, soğutulması ve proses içinde kontrol edilmesi amacıyla kullanılan entegre sistemlerdir. Yüksek korozyon direncine sahip AISI 304 / 316 paslanmaz çelikten imal edilir ve uzun ömürlüdür.',
+  },
+  {
+    id: 5,
     title: 'Merkezi Sistem Doğalgaz',
     img: '/assets/projects/pro4.jpeg',
     summary:
       'Merkezi sistem doğalgaz, birden fazla bağımsız bölümün bulunduğu yapılarda (apartmanlar, siteler, rezidanslar, oteller, hastaneler, iş merkezleri vb.) ısıtma ve sıcak su ihtiyacının, tek bir merkezde kurulan doğalgazlı kazan sistemi üzerinden karşılandığı ısıtma sistemidir. Bu sistemde doğalgaz, her dairede ayrı ayrı yakılmak yerine; merkezi kazan dairesinde yakılır ve üretilen ısı, tesisat aracılığıyla tüm binaya eşit ve kontrollü şekilde dağıtılır.',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Kızgın Yağ Tesisatı',
     img: '/assets/projects/pro5.jpeg',
     summary:
       'Kızgın yağ tesisatı, sanayi tesislerinde yüksek sıcaklık ihtiyacının karşılanması amacıyla; su veya buhar yerine ısı transfer yağı kullanılarak ısı enerjisinin yüksek sıcaklıklarda, düşük basınç altında güvenli ve verimli şekilde üretilmesini ve dağıtılmasını sağlayan sistemdir. Bu sistem, özellikle sabit ve kontrollü yüksek sıcaklık gerektiren proseslerde tercih edilir.',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Kızgın Su Tesisatı',
     img: '/assets/projects/pro6.jpeg',
     summary:
       'Kızgın su tesisatı, sanayi tesisleri ve büyük yapılarda; yüksek sıcaklıkta su kullanılarak ısıtma ve proses ısı ihtiyacının güvenli, verimli ve sürekli şekilde karşılanmasını sağlayan kapalı devre ısıtma sistemidir. Bu sistemde su, 100 °C’nin üzerinde sıcaklıklara çıkarılır ancak sistem basınç altında çalıştığı için su buharlaşmadan sıvı halde tutulur.',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Radyant Isıtma Sistemleri',
     img: '/assets/projects/pro7.jpeg',
     summary:

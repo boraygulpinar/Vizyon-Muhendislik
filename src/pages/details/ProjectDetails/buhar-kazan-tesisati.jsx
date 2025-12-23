@@ -1,9 +1,39 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { PROJECTS } from '../../../data/projects';
 
 export default function BuharKazanTesisatiDetail({ project }) {
   const [showLightbox, setShowLightbox] = useState(false);
   const FALLBACK_IMG = '/assets/projects/pro2.jpeg';
+  
+  // Mevcut projenin index'ini bul
+  const currentIndex = PROJECTS.findIndex(p => p.title === project.title);
+  const prevProject = currentIndex > 0 ? PROJECTS[currentIndex - 1] : PROJECTS[PROJECTS.length - 1];
+  const nextProject = currentIndex < PROJECTS.length - 1 ? PROJECTS[currentIndex + 1] : PROJECTS[0];
+  
+  // Proje linkini oluştur
+  const getProjectLink = (title) => {
+    const slugMap = {
+      'Endüstriyel Doğalgaz Tesisatı': 'endustriyel-dogalgaz-tesisati',
+      'Buhar Kazan Tesisatı': 'buhar-kazan-tesisati',
+      'Doğalgaz Altyapı Tesisatı': 'dogalgaz-altyapi-tesisati',
+      'Paslanmaz Tank Sistemleri': 'paslanmaz-tank-sistemleri',
+      'Merkezi Sistem Doğalgaz': 'merkezi-sistem-dogalgaz',
+      'Kızgın Yağ Tesisatı': 'kizgin-yag-tesisati',
+      'Kızgın Su Tesisatı': 'kizgin-su-tesisati',
+      'Radyant Isıtma Sistemleri': 'radyant-isitma-sistemleri',
+    };
+    const fallback = title
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[ç]/g, 'c')
+      .replace(/[ğ]/g, 'g')
+      .replace(/[ı]/g, 'i')
+      .replace(/[ö]/g, 'o')
+      .replace(/[ş]/g, 's')
+      .replace(/[ü]/g, 'u');
+    return `/projeler/${slugMap[title] || fallback}`;
+  };
   const onImgError = (e) => {
     if (e?.currentTarget) {
       e.currentTarget.onerror = null;
@@ -88,6 +118,51 @@ export default function BuharKazanTesisatiDetail({ project }) {
   return (
     <section className="py-10 md:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Projeler Arası Geçiş */}
+        <div className="mb-10 pb-8 border-b border-gray-200">
+          <div className="grid grid-cols-2 gap-6">
+            {/* Önceki Proje */}
+            <Link
+              to={getProjectLink(prevProject.title)}
+              className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 shadow-sm hover:shadow-lg transition duration-300"
+            >
+              <div className="relative h-40 overflow-hidden bg-gray-100">
+                <img
+                  src={prevProject.img}
+                  alt={prevProject.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                  onError={(e) => e.currentTarget.src = FALLBACK_IMG}
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
+              </div>
+              <div className="absolute inset-0 flex flex-col items-start justify-end p-4 text-white">
+                <p className="text-xs font-semibold text-white/70">← Önceki Proje</p>
+                <h3 className="font-semibold line-clamp-2">{prevProject.title}</h3>
+              </div>
+            </Link>
+
+            {/* Sonraki Proje */}
+            <Link
+              to={getProjectLink(nextProject.title)}
+              className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 shadow-sm hover:shadow-lg transition duration-300"
+            >
+              <div className="relative h-40 overflow-hidden bg-gray-100">
+                <img
+                  src={nextProject.img}
+                  alt={nextProject.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                  onError={(e) => e.currentTarget.src = FALLBACK_IMG}
+                />
+                <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent" />
+              </div>
+              <div className="absolute inset-0 flex flex-col items-end justify-end p-4 text-white text-right">
+                <p className="text-xs font-semibold text-white/70">Sonraki Proje →</p>
+                <h3 className="font-semibold line-clamp-2">{nextProject.title}</h3>
+              </div>
+            </Link>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-8 items-start">
           <div className="rounded-2xl overflow-hidden bg-gray-100 shadow-lg shadow-black/10 ring-1 ring-gray-200">
             <img
