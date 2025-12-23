@@ -72,46 +72,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* Ekibimiz */}
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Ekibimiz</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[ 
-            { n: 'Ayşe Demir', u: 'Makine Mühendisi', img: 'https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg' },
-            { n: 'Mehmet Yılmaz', u: 'Proje Müdürü', img: 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=800&q=80' },
-            { n: 'Elif Aydın', u: 'Teknik Ofis & Projelendirme', img: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80' },
-            { n: 'Can Kaya', u: 'Saha Şefi', img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80' },
-          ].map((p, i) => (
-            <div key={i} className="group relative bg-white rounded-2xl border border-gray-100 shadow-lg shadow-black/5 hover:shadow-2xl hover:shadow-black/10 transition-all duration-300 overflow-hidden hover:-translate-y-0.5 ring-1 ring-transparent hover:ring-blue-400/40">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-              <div className="relative aspect-square w-full overflow-hidden bg-gray-100">
-                <img
-                  src={p.img}
-                  alt={p.n}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                  decoding="async"
-                  onError={onImgError}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
-              </div>
-              <div className="p-4">
-                <div className="font-semibold text-gray-900 group-hover:text-blue-700 transition-colors">{p.n}</div>
-                <div className="text-sm text-gray-600">{p.u}</div>
-                <div className="mt-3 flex items-center gap-2 opacity-90 group-hover:opacity-100 transition-opacity">
-                  <a href="#" className="h-9 w-9 grid place-items-center rounded-full border border-gray-200 text-gray-600 bg-white transition-all duration-300 ease-out hover:scale-105 hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A66C2]/60" aria-label="LinkedIn">
-                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.7-2.2 4 0 4.8 2.6 4.8 6V24h-4v-5.6c0-1.3 0-3-1.8-3s-2 1.4-2 2.9V24h-4V8z"/></svg>
-                  </a>
-                  <a href="#" className="h-9 w-9 grid place-items-center rounded-full border border-gray-200 text-gray-600 bg-white transition-all duration-300 ease-out hover:scale-105 hover:text-white hover:border-transparent hover:shadow-lg hover:shadow-fuchsia-500/30 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-fuchsia-500 hover:to-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-500/50" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm11 1a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
     </div>
   );
 }

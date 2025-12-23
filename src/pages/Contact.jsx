@@ -36,7 +36,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">E‑Mail</div>
-                  <div className="text-gray-600">info@vizyonmuhendislik.com</div>
+                  <div className="text-gray-600">vizyon.muhendislik0@gmail.com</div>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function Contact() {
                   </svg>
                   Whatsapp
                 </a>
-                <a href="mailto:info@sirketadi.com" className="inline-flex items-center justify-center gap-2 h-11 rounded-lg border border-gray-300 hover:bg-gray-50 transition">
+                <a href="mailto:vizyon.muhendislik0@gmail.com" className="inline-flex items-center justify-center gap-2 h-11 rounded-lg border border-gray-300 hover:bg-gray-50 transition">
                   <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm-1.4 3L12 12 5.4 7h13.2z"/></svg>
                   E‑posta Gönder
                 </a>
@@ -71,7 +71,7 @@ export default function Contact() {
             <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
               <h3 className="text-xl font-bold text-gray-900">Çalışma Saatleri</h3>
               <ul className="mt-3 text-gray-700 space-y-1 text-sm">
-                <li className="flex items-center justify-between"><span>Pazartesi — Cuma</span><span>09:00 — 18:00</span></li>
+                <li className="flex items-center justify-between"><span>Pazartesi — Cuma</span><span>08:30 — 18:00</span></li>
                 <li className="flex items-center justify-between"><span>Cumartesi</span><span>10:00 — 16:00</span></li>
                 <li className="flex items-center justify-between"><span>Pazar</span><span>Kapalı</span></li>
               </ul>
@@ -81,14 +81,8 @@ export default function Contact() {
             <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
               <h3 className="text-xl font-bold text-gray-900">Sosyal Medya</h3>
               <div className="mt-3 flex items-center gap-3">
-                <a href="#" className="h-10 w-10 grid place-items-center rounded-full border border-current text-[#E4405F] hover:bg-[#E4405F]/10 transition" aria-label="Instagram">
+                <a href="https://instagram.com/gokha_nolur" target="_blank" rel="noopener noreferrer" className="h-10 w-10 grid place-items-center rounded-full border border-current text-[#E4405F] hover:bg-[#E4405F]/10 transition" aria-label="Instagram">
                   <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm11 1a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
-                </a>
-                <a href="#" className="h-10 w-10 grid place-items-center rounded-full border border-current text-[#1877F2] hover:bg-[#1877F2]/10 transition" aria-label="Facebook">
-                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M13 3h4a1 1 0 011 1v4h-3a1 1 0 00-1 1v3h4l-1 4h-3v6h-4v-6H7v-4h3V9a6 6 0 016-6z"/></svg>
-                </a>
-                <a href="#" className="h-10 w-10 grid place-items-center rounded-full border border-current text-[#0A66C2] hover:bg-[#0A66C2]/10 transition" aria-label="LinkedIn">
-                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.7-2.2 4 0 4.8 2.6 4.8 6V24h-4v-5.6c0-1.3 0-3-1.8-3s-2 1.4-2 2.9V24h-4V8z"/></svg>
                 </a>
               </div>
             </div>

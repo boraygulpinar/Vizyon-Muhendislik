@@ -163,25 +163,22 @@ export default function Layout() {
               </li>
               <li className="flex items-center gap-2">
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 8.67v6.58A3.75 3.75 0 0 0 5.25 19h13.5A3.75 3.75 0 0 0 22.5 15.25V8.67l-9.553 5.731a2.25 2.25 0 0 1-2.394 0L1.5 8.67Z"/><path d="M22.5 6.75v-.003A3.75 3.75 0 0 0 18.75 3h-13.5A3.75 3.75 0 0 0 1.5 6.747V6.75l9.553 5.73a2.25 2.25 0 0 0 2.394 0L22.5 6.75Z"/></svg>
-                <a href="mailto:info@vizyonmuhendislik.com" className="hover:text-cyan-400">info@vizyonmuhendislik.com</a>
+                <a href="mailto:vizyon.muhendislik0@gmail.com" className="hover:text-cyan-400">vizyon.muhendislik0@gmail.com</a>
               </li>
-              <li className="flex items-center gap-2">
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path fillRule="evenodd" d="M11.47 3.84a.75.75 0 0 1 1.06 0 12.7 12.7 0 0 1 3.95 6.32c.23.89.3 1.83.2 2.76-.23 2.08-1.33 4.06-3.42 5.95a12.28 12.28 0 0 1-1.76 1.32.75.75 0 0 1-.79 0 12.28 12.28 0 0 1-1.76-1.32c-2.09-1.9-3.2-3.87-3.43-5.95-.1-.93-.03-1.87.2-2.76a12.7 12.7 0 0 1 3.95-6.32Z" clipRule="evenodd"/><path d="M12 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"/></svg>
-                <span>İstanbul, Türkiye</span>
+              <li className="flex items-start gap-2">
+                <svg className="h-4 w-4 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path fillRule="evenodd" d="M11.47 3.84a.75.75 0 0 1 1.06 0 12.7 12.7 0 0 1 3.95 6.32c.23.89.3 1.83.2 2.76-.23 2.08-1.33 4.06-3.42 5.95a12.28 12.28 0 0 1-1.76 1.32.75.75 0 0 1-.79 0 12.28 12.28 0 0 1-1.76-1.32c-2.09-1.9-3.2-3.87-3.43-5.95-.1-.93-.03-1.87.2-2.76a12.7 12.7 0 0 1 3.95-6.32Z" clipRule="evenodd"/><path d="M12 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"/></svg>
+                <span>
+                  <span className="block">Pendik, İstanbul</span>
+                  <span className="block">Türkiye</span>
+                </span>
               </li>
             </ul>
           </div>
           <div>
             <div className="font-semibold mb-3">Bizi Takip Edin</div>
             <div className="flex items-center gap-3">
-              <a href="#" aria-label="Instagram" className="h-9 w-9 grid place-items-center rounded-full border border-white/20 hover:bg-white/10">
+              <a href="https://instagram.com/gokha_nolur" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="h-9 w-9 grid place-items-center rounded-full border border-white/20 hover:bg-white/10">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm11 1a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
-              </a>
-              <a href="#" aria-label="Facebook" className="h-9 w-9 grid place-items-center rounded-full border border-white/20 hover:bg-white/10">
-                <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4"><path d="M13 3h4a1 1 0 011 1v4h-3a1 1 0 00-1 1v3h4l-1 4h-3v6h-4v-6H7v-4h3V9a6 6 0 016-6z"/></svg>
-              </a>
-              <a href="#" aria-label="LinkedIn" className="h-9 w-9 grid place-items-center rounded-full border border-white/20 hover:bg-white/10">
-                <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.7-2.2 4 0 4.8 2.6 4.8 6V24h-4v-5.6c0-1.3 0-3-1.8-3s-2 1.4-2 2.9V24h-4V8z"/></svg>
               </a>
             </div>
           </div>

@@ -103,24 +103,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Neden Biz */}
-      <section className="bg-gray-50 rounded-xl p-8">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Neden Biz?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          {[ 
-            { k: '15+ yıl', v: 'Saha ve Ofis Deneyimi' },
-            { k: '450+', v: 'Tamamlanan Proje' },
-            { k: '%100', v: 'Uygunluk ve Güvenlik' },
-            { k: '7/24', v: 'Teknik Destek' },
-          ].map((it, i) => (
-            <div key={i} className="bg-white rounded-xl shadow p-6 text-center border border-gray-100">
-              <div className="text-3xl font-extrabold text-blue-700">{it.k}</div>
-              <div className="mt-2 text-gray-700 font-medium">{it.v}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Sürecimiz */}
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Sürecimiz</h2>
